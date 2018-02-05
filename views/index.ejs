@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form name="form1" method="POST" action="/inventory/add">
+	    <table>
+	        <tr>
+		        <td>Inventory Name: </td>
+				<td><input type="text" name="invName" ></td>
+	        </tr>
+	        <tr>
+		        <td>Inventory Type: </td>
+		        <td><input type="text" name="invName" ></td>
+	        </tr>
+	        <tr>
+	        		<td colspan="2"><input type="submit" value="Save" ></td>
+	        </tr>
+	    </table>
+    </form>
+    <% if(userValue!=null){ %>    
+        <div> Inventory Name and value entered as <%= userValue.name %> </div>
+    <%}%> 
+  </body>
+</html>
