@@ -1,6 +1,6 @@
 
 /*
- * GET users listing.
+ * GET inventory listing.
  */
 
 exports.list = function(req, res){
