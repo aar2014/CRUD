@@ -14,15 +14,24 @@
 	        </tr>
 	        <tr>
 		        <td>Inventory Type: </td>
-		        <td><input type="text" name="invName" ></td>
+		        <td><input type="text" name="invType" ></td>
+	        </tr>
+	        <tr>
+		        <td>Inventory Count: </td>
+		        <td><input type="number" name="invCount" value="1"></td>
+	        </tr>
+	        <tr>
+		        <td>Storage Area: </td>
+		        <td><input type="text" name="invArea"></td>
+	        </tr>
+	        <tr>
+		        <td>Shelf Number: </td>
+		        <td><input type="number" name="invShelfNum" value="1"></td>
 	        </tr>
 	        <tr>
 	        		<td colspan="2"><input type="submit" value="Save" ></td>
 	        </tr>
 	    </table>
     </form>
-    <% if(userValue!=null){ %>    
-        <div> Inventory Name and value entered as <%= userValue.name %> </div>
-    <%}%> 
   </body>
 </html>
